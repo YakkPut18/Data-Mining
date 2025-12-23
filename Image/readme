@@ -1,1 +1,39 @@
+# Image Preprocessing Pipeline
+Repositori ini berisi rangkaian kode (notebook) untuk melakukan pra-pemrosesan gambar (image preprocessing) menggunakan Python dan OpenCV. Pipeline ini dirancang agar sederhana namun tetap efektif untuk kebutuhan analisis citra, machine learning, maupun computer vision.
+
+Notebook utama: Image_Preprocession.ipynb
+
+# Tujuan
+Proyek ini bertujuan menyediakan alur kerja preprocessing gambar yang dapat digunakan untuk:
+1. Menstandarkan ukuran gambar
+2. Meningkatkan kualitas visual
+3. Menyiapkan citra untuk tahap feature extraction atau machine learning
+4. Mendokumentasikan langkah-langkah preprocessing agar mudah direproduksi
+
+# Fitur Utama Preprocessing
+Berikut langkah-langkah utama yang diterapkan dalam notebook:
+
+1️⃣ Load Image
+Notebook memuat citra beresolusi penuh menggunakan OpenCV (cv2.imread) kemudian mengonversinya dari BGR ke RGB dengan cv2.cvtColor.
+
+2️⃣ Resize Image
+Gambar diubah ukurannya ke resolusi konsisten (misal 240 × 320 piksel) untuk menyamakan skala dan mempermudah pengolahan berikutnya.
+
+3️⃣ Grayscale Conversion
+Gambar RGB diubah ke grayscale untuk mengurangi kompleksitas tanpa menghilangkan informasi struktural penting.
+
+4️⃣ Noise Reduction
+Menggunakan teknik seperti Gaussian Blur untuk mengurangi noise dan membuat struktur objek lebih jelas.
+
+5️⃣ Edge Detection (Opsional)
+Beberapa tahap pengolahan mencakup deteksi tepi menggunakan Canny Edge Detector untuk analisis struktur objek.
+
+6️⃣ Normalisasi Gambar
+Pixel dinormalisasi dalam rentang 0–1 untuk mempersiapkan data ke model machine learning.
+
+# Teknologi yang Digunakan
+- Python 3.x
+- OpenCV (cv2)
+- NumPy
+- Google Colab
 
